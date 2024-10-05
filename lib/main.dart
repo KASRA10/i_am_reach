@@ -1,6 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'dart:io';
 
 void main() {
   runApp(
@@ -49,7 +48,7 @@ class _IAmReachMyWidget extends State<IAmReachMyWidget> {
             ),
           ),
         ),
-        body: const Center(
+        body: Center(
           child: Wrap(
             direction: Axis.vertical,
             alignment: WrapAlignment.center,
@@ -60,7 +59,7 @@ class _IAmReachMyWidget extends State<IAmReachMyWidget> {
             textDirection: TextDirection.ltr,
             verticalDirection: VerticalDirection.down,
             children: [
-              Image(
+              const Image(
                 width: 326,
                 height: 326,
                 alignment: Alignment.center,
@@ -71,7 +70,7 @@ class _IAmReachMyWidget extends State<IAmReachMyWidget> {
                 semanticLabel:
                     'An Image Of A Real Diamonds Which Is Our Goal!!',
               ),
-              Text(
+              const Text(
                 'Tap The Diamond Button!',
                 style: TextStyle(
                   fontSize: 12,
@@ -80,8 +79,8 @@ class _IAmReachMyWidget extends State<IAmReachMyWidget> {
                 ),
               ),
               Text(
-                'Number Of Receive Diamonds: ',
-                style: TextStyle(
+                'Number Of Receive Diamonds: $counter',
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
