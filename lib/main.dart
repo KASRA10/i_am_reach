@@ -1,29 +1,115 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+      home: IAmReachMyWidget(),
+    ),
+  );
+} // End Of Main
+
+class IAmReachMyWidget extends StatefulWidget {
+  const IAmReachMyWidget({super.key});
+
+  @override
+  State<IAmReachMyWidget> createState() => _IAmReachMyWidget();
+}
+
+class _IAmReachMyWidget extends State<IAmReachMyWidget> {
+  int counter = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.yellow[600],
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         appBar: AppBar(
+          leading: BackButton(
+            color: Colors.amber,
+            onPressed: () => exit(0),
+          ),
+          backgroundColor: Colors.black,
           centerTitle: true,
-          backgroundColor: Colors.blueGrey[900],
-          title: const Text(
-            'I Am Rich!',
+          toolbarHeight: 75.5,
+          elevation: 15,
+          shadowColor: Colors.blueGrey[900],
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(15),
+            ),
+          ),
+          title: Text(
+            'Make Me Reach!!!',
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.yellow[600],
             ),
           ),
         ),
         body: const Center(
-          child: Image(
-            image: AssetImage(
-              'lib/images/diamond.png',
-            ),
+          child: Wrap(
+            direction: Axis.vertical,
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            runAlignment: WrapAlignment.center,
+            spacing: 14.0,
+            runSpacing: 4.0,
+            textDirection: TextDirection.ltr,
+            verticalDirection: VerticalDirection.down,
+            children: [
+              Image(
+                width: 326,
+                height: 326,
+                alignment: Alignment.center,
+                fit: BoxFit.contain,
+                image: AssetImage(
+                  'lib/images/diamondMainPicture.png',
+                ),
+                semanticLabel:
+                    'An Image Of A Real Diamonds Which Is Our Goal!!',
+              ),
+              Text(
+                'Tap The Diamond Button!',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+              Text(
+                'Number Of Receive Diamonds: ',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            setState(
+              () {
+                counter++;
+              },
+            );
+          },
+          backgroundColor: Colors.black,
+          elevation: 15,
+          tooltip: 'Press Diamond Button To Get More Diamonds',
+          enableFeedback: true,
+          hoverElevation: 0,
+          child: const Icon(
+            Icons.diamond_rounded,
+            color: Colors.yellow,
+            semanticLabel: 'an icon of a daimon',
           ),
         ),
       ),
-    ),
-  );
-} // End Of Main()
+    );
+  }
+}
