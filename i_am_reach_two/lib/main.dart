@@ -11,8 +11,15 @@ void main() {
   );
 } // End Of Main
 
-class IAmReachMyWidget extends StatelessWidget {
+class IAmReachMyWidget extends StatefulWidget {
   const IAmReachMyWidget({super.key});
+
+  @override
+  State<IAmReachMyWidget> createState() => _IAmReachMyWidget();
+}
+
+class _IAmReachMyWidget extends State<IAmReachMyWidget> {
+  late int counter;
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +47,17 @@ class IAmReachMyWidget extends StatelessWidget {
             style: TextStyle(
               color: Colors.yellow[600],
             ),
+          ),
+        ),
+        body: const Center(
+          child: Wrap(
+            children: [
+              Image(
+                image: AssetImage(
+                  'lib/images/diamondMainPicture.png',
+                ),
+              )
+            ],
           ),
         ),
       ),
