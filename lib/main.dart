@@ -37,8 +37,9 @@ class _IAmReachMyWidget extends State<IAmReachMyWidget> {
           elevation: 15,
           shadowColor: Colors.blueGrey[900],
           shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(15),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(15),
+              bottomRight: Radius.circular(15),
             ),
           ),
           title: Text(
