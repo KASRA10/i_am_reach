@@ -14,11 +14,13 @@ Flutter is an open-source UI software development kit (SDK) created by Google, d
 # What Is Android Weather App? [![My Skills](https://skillicons.dev/icons?i=androidstudio)](https://skillicons.dev)
 An Android weather app is a mobile application designed to provide users with real-time weather information and forecasts for various locations. These apps utilize data from meteorological services and APIs to deliver accurate weather updates, helping users plan their daily activities based on current and predicted weather conditions.
 
+# Preview
+![IAMREACH-KasraK10](https://github.com/user-attachments/assets/da788781-e8fe-4677-9db3-15fb897f420c)
+
 # Contribution
-Since it is my training code and actually is it something like my portfolio, please do  not use all my codes and UI, and There is no way to contribute to this repository.
+Since it is my training code and actually is it something like my **portfolio**, please do  not use all my codes and UI, and There is no way to contribute to this repository.
 
 # flutter_application_1
-
 A new Flutter project. This Is My Personal Exercising Of Flutter While I Am Learning It. It Is A Small Presentable **Portfolio** as well. Simple Flutter Weather App By Using Some Useful And Important Flutter Widgets.
 
 ## Getting Started
