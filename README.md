@@ -11,9 +11,6 @@ art is a general-purpose, object-oriented programming language developed by Goog
 # What Is Flutter? [![My Skills](https://skillicons.dev/icons?i=flutter)](https://skillicons.dev)
 Flutter is an open-source UI software development kit (SDK) created by Google, designed for building natively compiled applications for multiple platforms from a single codebase. First introduced in 2015 and officially released in May 2017, Flutter allows developers to create applications for iOS, Android, web, desktop (Windows, macOS, Linux), and Google's Fuchsia operating system.
 
-# What Is Android Weather App? [![My Skills](https://skillicons.dev/icons?i=androidstudio)](https://skillicons.dev)
-An Android weather app is a mobile application designed to provide users with real-time weather information and forecasts for various locations. These apps utilize data from meteorological services and APIs to deliver accurate weather updates, helping users plan their daily activities based on current and predicted weather conditions.
-
 # Preview
 ![IAMREACH-KasraK10](https://github.com/user-attachments/assets/da788781-e8fe-4677-9db3-15fb897f420c)
 
